@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <h1>Questionnaire</h1>
+</header>
+<form>
+    <main>
+
+        <div>
+            <label for="name">Your name: </label>
+            <input id="name" type="text" size="20" />
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" size="20" />
+        </div>
+        <div>
+            <label for="birthday"> Your birth day: </label>
+            <input id="birthday" type="date" size="20" />
+        </div>
+        <div>
+            <label for="years"> Years of experience: </label>
+            <input id="years" type="number" step="0" />
+        </div>
+        <div>
+            <label for="fromwhere">How did you hear about us?</label>
+            <input type="text" list="from" id="fromwhere" />
+            <datalist id="from">
+                <option value="friends"></option>
+                <option value="linkedin"></option>
+                <option value="careers website"></option>
+                <option value="other"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="english"> Your english level: </label>
+            <input id="english" type="range" min="0" max="100" step="10" />
+        </div>
+    </main>
+    <footer>
+        <input type="submit" value="Send" />
+    </footer>
+</form>
+
+</html>
